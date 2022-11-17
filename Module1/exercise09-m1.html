@@ -1,35 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>ex09</title>
+    <script src="exercise09-js-m1.js"></script>
 </head>
 <body>
 <h1>Prime Number tester</h1>
-
-<script>
-  /* Write a program that asks the user for an integer and tells if the number is a prime number. (2p)
+  <!Write a program that asks the user for an integer and tells if the number is a prime number. (2p)
 Prime numbers are numbers that are only divisible by 1 and itself.
 For example, number 13 is a prime number as it can only be divided by 1 or 13 so that the result is an integer.
 On the other hand, number 21 for example is not a prime number as it can be also be divided by numbers 3 and 7.
-Print the result on the HTML document. */
-  let into = +prompt('What number do you wish to test? ')
-if (into > 2) {
-    for (let i = 2; i < into; i++) {
-        if (into % i == 0) {
-            document.write(`${into} IS NOT A PRIME NUMBER :C`);
-            break;
-        }
-        else if (i == (into - 1)) {
-            document.write(`OF COURSE ${into} IS A PRIME NUMBER :D`);
-        }
-    }
-
-}
-else {
-    document.write(`OF COURSE ${into} IS A PRIME NUMBER :D`);
-}
-
-</script>
+Print the result on the HTML document.>
+<p id="print"></p>
 </body>
 </html>

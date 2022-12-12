@@ -13,8 +13,8 @@ async function getTVMazeInfo(keyword) {
 
 
 
-document.getElementById("search-button").addEventListener("click", async (e) => {
-    e.preventDefault();
+document.getElementById("search-button").addEventListener("click", async (evt) => {
+    evt.preventDefault();
 
     const checkContainer = document.getElementById("container");
     if (checkContainer !== null) {

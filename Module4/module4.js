@@ -22,9 +22,8 @@ document.getElementById("search-button").addEventListener("click", async (evt) =
     }
 
     const keyword = document.getElementById("search-box").value;
-    //console.log(keyword);
     const apiResult = await getTVMazeInfo(keyword);
-    //console.log(apiResult);
+
 
 
     const container = document.createElement("div");
